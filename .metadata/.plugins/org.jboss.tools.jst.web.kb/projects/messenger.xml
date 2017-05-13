@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-websocket.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/jersey/jersey-server/1.19.1/jersey-server-1.19.1.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-coyote.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/jersey/jersey-json/1.19.1/jersey-json-1.19.1.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/jasper-el.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-i18n-es.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/jaspic-api.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-util.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.2/jackson-jaxrs-1.9.2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/catalina-ha.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/jasper.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-jdbc.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-util-scan.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/catalina-ant.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-api.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/glassfish/extras/glassfish-embedded-web/3.1.1/glassfish-embedded-web-3.1.1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/appserv-tags.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/c-1_0-rt.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/c-1_0.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/c.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/fmt-1_0-rt.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/fmt-1_0.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/fmt.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/fn.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/html_basic.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/jsf_core.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/jspcachtags.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/mojarra_ext.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/permittedtaglibs.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/scriptfree.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/sql-1_0-rt.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/sql-1_0.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/sql.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/taglib.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/x-1_0-rt.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/x-1_0.tld" project="messenger"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-glassfish-embedded-web-3.1.1.jar/meta-inf/x.tld" project="messenger"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/catalina-storeconfig.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/annotations-api.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/servlet-api.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.2/jackson-xc-1.9.2.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/catalina.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/el-api.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/jsp-api.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/websocket-api.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/tomcat-jni.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/catalina-tribes.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar"/>
+  <path value="D:/JAVA/Videos/Apache/apache-tomcat-8.5.8/lib/ecj-4.5.1.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar"/>
+  <path value="C:/Users/rratra/.m2/repository/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jersey-servlet-1.19.1.jar/meta-inf/taglib.tld" project="messenger"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="20" name="%0" offset="3094" path="%1"/>
+   <linked-el length="20" name="%0" offset="1132" path="%1"/>
+   <linked-el length="20" name="%2" offset="3094" path="%1"/>
+   <linked-el length="20" name="%2" offset="1132" path="%1"/>
+   <linked-el length="17" name="%3" offset="2852" path="%1"/>
+   <linked-el length="17" name="%3" offset="2268" path="%1"/>
+   <linked-el length="17" name="%3" offset="2460" path="%1"/>
+   <linked-el length="17" name="%4" offset="2852" path="%1"/>
+   <linked-el length="17" name="%4" offset="2268" path="%1"/>
+   <linked-el length="17" name="%4" offset="2460" path="%1"/>
+   <linked-el length="63" name="%5" offset="1287" path="%1"/>
+   <linked-el length="18" name="%6" offset="1705" path="%1"/>
+   <linked-el length="63" name="%6" offset="1287" path="%1"/>
+   <linked-el length="63" name="%7" offset="1287" path="%1"/>
+   <linked-el length="18" name="%8" offset="1705" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="glassfish" value="%0"/>
+  <alias path="glassfish.version" value="%2"/>
+  <alias path="/messenger/pom.xml" value="%1"/>
+  <alias path="jersey.version" value="%3"/>
+  <alias path="jersey" value="%4"/>
+  <alias path="project.build.finalName" value="%5"/>
+  <alias path="project" value="%6"/>
+  <alias path="project.build" value="%7"/>
+  <alias path="project.version" value="%8"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

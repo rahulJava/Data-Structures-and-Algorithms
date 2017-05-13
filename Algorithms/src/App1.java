@@ -1,0 +1,26 @@
+
+public class App1 {
+	public static void main(String[] args) {
+		int [] inputArray = {25,47,3,19,8,18};
+		App1 p1 = new App1();
+		p1.sort(inputArray);
+		for(int i=0;i<inputArray.length;i++)
+		System.out.print(" "+inputArray[i]);
+	}
+	public void sort(int[] inputArray)
+	{
+		for(int i=0;i<inputArray.length;i++)
+		{
+			for(int j=i+1;j<inputArray.length;j++)
+			{
+				if(inputArray[i]>inputArray[j])
+				{
+					int max = inputArray[j];
+					inputArray[j]=inputArray[i];
+					inputArray[i]=max;
+				}
+			}
+		}
+	}
+
+}

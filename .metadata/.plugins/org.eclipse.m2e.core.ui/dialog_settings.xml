@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\JAVA\Videos\Udemy\Java-Web-Services\07_Apache_CXF\attached_files\045_Creating_a_CXF_Web_Service_Project_From_Scratch\javafirstws"/>
+			<item value="D:\JAVA\Videos\Udemy\Java-Web-Services\06 JAX-WS AND JAXB\attached_files\040 Marshalling and Unmarshalling\jaxb-xjc"/>
+			<item value="D:\JAVA\Videos\Udemy\Java-Web-Services\06 JAX-WS AND JAXB\attached_files\039 Generating java classes from xml schema\jaxb-xjc"/>
+			<item value="D:\JAVA\Videos\Udemy\Java-Web-Services\06 JAX-WS AND JAXB\attached_files\040 Marshalling and Unmarshalling\__MACOSX\jaxb-xjc"/>
+			<item value="D:\JAVA\Videos\Java-Web-Services\07_Apache_CXF\attached_files\045_Creating_a_CXF_Web_Service_Project_From_Scratch\javafirstws"/>
+			<item value="D:\JAVA\Videos\Java-Web-Services\07 Apache CXF\attached_files\045 Creating a CXF Web Service Project From Scratch\javafirstws"/>
+			<item value="D:\JAVA\Videos\Java-Web-Services\07 Apache CXF\attached_files\045 Creating a CXF Web Service Project From Scratch\Javafirstws"/>
+			<item value="D:\JAVA\Java\Web_Services\TestInstallation\WebContent\Test.jsp"/>
+			<item value="D:\JAVA\Videos\Java-Web-Services\03 XML and XML Schema Definition Crash Course\attached_files\019 XML Schema Hands On\Patient"/>
+			<item value="D:\JAVA\Java\Web_Services\Servers"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\JAVA\Java\Web_Services\messenger\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="co.rahu.webservice.hellows"/>
+			<item value="co.rahu.webservice.HelloWs"/>
+		</list>
+		<list key="groupId">
+			<item value="co.rahu.webservice"/>
+		</list>
+		<list key="artifactId">
+			<item value="hellows"/>
+			<item value="HelloWs"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

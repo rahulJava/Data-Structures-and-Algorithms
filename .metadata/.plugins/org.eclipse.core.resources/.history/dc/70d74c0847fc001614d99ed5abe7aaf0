@@ -1,0 +1,28 @@
+
+public class Test extends Test1
+{
+	protected static final String userNameMetafields[] 		= {"ctl00$ctl00$ContentPlaceHolderTierContent$ContentPlaceHolderTierContentMain$TextBoxUserName","ZIP-CD","FUserID","username","ssnt","ctl00$WebPartManager1$CenterLogin$LoginUserControlId$txtLoginID","_ParticipantLogon20_WAR_ahcommonauthportlet_userId","sSsn","usrId","userid", "ssn", "useridtype", "eeId", "logon", "_ParticipantLogon_WAR_authportlet_userId","_ParticipantLogon12_WAR_Auth12portlet_userId","ctl00$signOnPh$UsernameTextBox", "USERNAME","userid","USER","_ParticipantLogon20_WAR_CommonAuthportlet_userId","UID","emailOrUsername"};
+	protected static final String passwordMetafields[] 		= {"ctl00$ctl00$ContentPlaceHolderTierContent$ContentPlaceHolderTierContentMain$TextBoxPassword","FPassword","txtPassword","_ParticipantLogon20_WAR_ahcommonauthportlet_password","password","sPswd","pswd","pin","_ParticipantLogon_WAR_authportlet_password", "_ParticipantLogon12_WAR_Auth12portlet_password", "ctl00$signOnPh$PasswordTextBox","PASSWORD","_ParticipantLogon20_WAR_CommonAuthportlet_password","ldappwd","password"};
+
+public static void main(String[] args) {
+	int a= TWO_WAY_SSL_CONNECTION;
+}
+private String getMetaFieldsFromDB(String []loginMetafields){
+	boolean    isMetafieldFoundInRequest=false;
+	String     metaFieldFromDB="";            
+	for(int i=0;i<loginMetafields.length;i++)
+	{
+		metaFieldFromDB=loginMetafields[i];
+		if(getUserCredential(metaFieldFromDB)!=null)
+		{
+			isMetafieldFoundInRequest=true;
+			break;
+		}
+	}
+	if(!isMetafieldFoundInRequest) {
+		throw new Exception("Different LOGIN metafields in DB!!!");
+	}
+
+	return metaFieldFromDB;
+}
+}

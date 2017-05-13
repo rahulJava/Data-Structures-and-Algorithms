@@ -1,0 +1,82 @@
+package Thread;
+
+
+public class A {
+
+    public static void main(String... args) {
+        Printer print = new Printer();
+        B t1 = new B(print, false);
+        B t2 = new B(print, true);
+        t1.start();
+        t2.start();
+    }
+
+}
+
+class B extends Thread {
+
+    private int max;
+    private Printer print;
+    private boolean isEvenNumber;
+
+    B(Printer print boolean isEvenNumber) {
+        this.print = print;
+       
+        this.isEvenNumber = isEvenNumber;
+    }
+
+    @Override
+    public void run() {
+
+        //System.out.println("Run method");
+        for(int number=0;number<100;number++)
+       {
+
+            if (isEvenNumber) {
+                System.out.println("Even :"+ Thread.currentThread().getName());
+                print.printEven(number);
+                //number+=2;
+            } else {
+                System.out.println("Odd :"+ Thread.currentThread().getName());
+                print.printOdd(number);
+                // number+=2;
+            }
+            number += 2;
+        }
+
+    }
+
+}
+
+class Printer {
+
+    boolean isOdd = false;
+
+    synchronized void printEven(int number) {
+
+        while (isOdd == false) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Even:" + number);
+        isOdd = false;
+        notifyAll();
+    }
+
+    synchronized void printOdd(int number) {
+        while (isOdd == true) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Odd:" + number);
+        isOdd = true;
+        notifyAll();
+    }
+
+}

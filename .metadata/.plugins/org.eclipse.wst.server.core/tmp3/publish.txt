@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Sun Mar 19 14:25:19 IST 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\rratra\\.m2\\repository\\org\\springframework\\spring-web\\3.2.0.RELEASE\\spring-web-3.2.0.RELEASE.jar=WEB-INF/lib/spring-web-3.2.0.RELEASE.jar

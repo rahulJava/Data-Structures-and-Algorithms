@@ -1,0 +1,33 @@
+package SinglyLinkedList;
+
+public class App {
+	public static void main(String[] args) {
+		SinglyLinkedList list1= new SinglyLinkedList();
+		list1.insertFirst(5);
+		list1.insertAtTheEnd(10);
+		list1.insertAtTheEnd(10);
+		list1.insertAtTheEnd(30);
+		list1.insertAtTheEnd(30);
+		list1.insertAtTheEnd(30);
+		list1.insertAtTheEnd(30);
+		SinglyLinkedList.removeDuplicates1(list1);
+		
+		//list1.insertAtTheEnd(40);
+		//list1.displayLinkedList();
+		SinglyLinkedList list2= new SinglyLinkedList();
+		list2.insertFirst(1);
+		list2.insertAtTheEnd(20);
+		list2.insertAtTheEnd(30);
+		list2.insertAtTheEnd(60);
+		SinglyLinkedList.hash(list2);
+		//list2.insertAtTheEnd(40);
+		
+		
+		
+	
+		
+		
+	}
+	
+
+}

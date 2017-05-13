@@ -1,0 +1,10 @@
+package com.rahul.interfac1;
+
+public interface B {
+	default int check()
+	
+	{
+		return 10;
+	}
+
+}

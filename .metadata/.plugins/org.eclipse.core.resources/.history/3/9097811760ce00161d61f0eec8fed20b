@@ -1,0 +1,5 @@
+package com.rahul.interfac1;
+
+public interface B {
+
+}

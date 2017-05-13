@@ -1,0 +1,5 @@
+package org.ratra.javabrains.messenger.resources;
+
+public class MessageResources {
+
+}

@@ -1,0 +1,26 @@
+package org.ratra.javabrains.messenger.resources;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.rahul.messenger.model.Employee;
+import org.rahul.messenger.model.Message;
+import org.rahul.messenger.model.MessageService;
+
+
+@Path("/messages")
+public class MessageResources {
+
+	MessageService service = new MessageService();
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
+	public List<Message> getMessages()
+	{
+		return service.getAllMessage();
+	}
+}

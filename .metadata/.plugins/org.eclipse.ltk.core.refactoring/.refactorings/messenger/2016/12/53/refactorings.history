@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;messenger/src/main/java/org/ratra/javabrains/messenger/MyResource.java&apos; to &apos;MyResource1.java&apos;" description="Rename resource &apos;MyResource.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/org/ratra/javabrains/messenger/MyResource.java" name="MyResource1.java" stamp="1482680127378" updateReferences="true"/>
+</session>

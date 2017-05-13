@@ -1,0 +1,55 @@
+package com.rahul1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.rahul.model.products;
+
+//Service Implementation
+@WebService(endpointInterface = "com.rahul1.HelloWorld")
+public class HelloWorldImpl implements HelloWorld{
+	
+	private ArrayList<String> booklist = new ArrayList<>();
+	private ArrayList<String> movies = new ArrayList<>();
+	private ArrayList<String> music =new ArrayList<>();
+
+	@Override
+	public String getHelloWorldAsString(String name) {
+		return "Hello World JAX-WS " + name;
+	}
+
+	@Override
+	public List<products> getProductSv2() {
+		List<products> productList = new ArrayList<>();
+		productList.add(new products("Java Brains", "1234", "10000000.00"));
+		productList.add(new products("Webservices", "1564", "10998"));
+		return productList;
+	}
+	
+@Override
+	
+	public boolean addProduct(String category,String product)
+	{
+	
+	switch(category.toLowerCase())
+	{
+	case "book":
+		 booklist.add(product);
+		 break;
+		
+	case "movies":
+		 movies.add(product);
+		 break;
+		
+	case"music":
+		 music.add(product);
+		break;
+	default:
+			return false;				
+	}
+		return true;
+	}
+
+}

@@ -1,0 +1,38 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+
+public class FirstGenuine 
+{
+	public static void main(String[] args) {
+		
+		printNonrepeatedCharacter("Swiss");
+	}
+	public static void printNonrepeatedCharacter(String word)
+	{
+		char[] chars=word.toCharArray();
+		Map< Character, Integer> map = new LinkedHashMap<>();
+		for(Character c : chars)
+		{
+			if
+			(map.containsKey(c))
+			{
+				map.put(c, map.get(c)+1);
+			}
+			else
+			{
+				map.put(c, 1);
+			}
+		}
+		for(Entry<Character, Integer> entry: map.entrySet())
+		{
+			if(entry.getValue()>2)
+			{
+				System.out.printf("%s",entry.getKey());
+			}
+		}
+	}
+
+}

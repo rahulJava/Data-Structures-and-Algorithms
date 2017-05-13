@@ -1,0 +1,37 @@
+package Thread;
+
+public class C {
+	public static void main(String[] args) {
+		E e1 = new E();
+		D d1 = new D(e1,"Dhoni");
+		d1.start();
+		
+		
+	}
+
+}
+class D extends Thread
+{
+	E e1 ;
+	String name;
+	D(E e1 ,String name)
+	{
+		this.e1=e1;
+		this.name=name;
+	}
+	public void run()
+	{
+		System.out.println("GoodMorning:");
+		for(int i =0 ;i<10;i++)
+		{
+		e1.print(name);
+		}
+	}
+}
+class E
+{
+	public void print(String name)
+	{
+		System.out.print(name);
+	}
+}

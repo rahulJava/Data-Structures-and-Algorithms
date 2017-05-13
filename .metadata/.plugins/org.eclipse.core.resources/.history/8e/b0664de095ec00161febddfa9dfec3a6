@@ -1,0 +1,25 @@
+
+public class Binary 
+{
+		public static void main(String[] args) {
+			
+			int a[]  = {10,20,30,40,50,58,63,76,87,99};
+			int x=30;
+			int y= binarySearc(a,x);
+			System.out.println(y);
+		}
+		static int binarySearc(int a[],int x)
+		{
+			int p=0;
+			int r = a.length-1;
+			while(p<=r){
+				int q=(p+r)/2;
+				if(a[q]>x) p=q+1;
+				else if(a[q]<x) r=q-1;
+				else return q;
+				
+			}
+			return -1;
+		}
+}
+

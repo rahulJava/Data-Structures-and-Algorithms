@@ -1,0 +1,26 @@
+package com.rahul1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebMethod;
+import javax.jws.WebResult;
+import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
+import javax.jws.soap.SOAPBinding.Style;
+
+import com.rahul.model.products;
+
+//Service Endpoint Interface
+@WebService
+@SOAPBinding(style = Style.DOCUMENT)
+public interface HelloWorld{
+
+	@WebMethod String getHelloWorldAsString(String name);
+	@WebMethod()
+	@WebResult(name="products")
+	public abstract ArrayList<products> getProductSv2();
+	@WebMethod()
+	public abstract boolean addProduct(String category, String product);
+
+}

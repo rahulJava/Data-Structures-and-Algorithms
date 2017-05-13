@@ -1,0 +1,33 @@
+package SinglyLinkedList;
+
+public class SinglyLinkedList
+{
+
+	Node first;
+	public void insertFirst(int data)
+	{
+		Node n1 = new Node();
+		n1.data=data;
+		n1.next=first;
+		first = n1;
+	}
+	
+	public Node deleteFirst()
+	{
+		Node temp=first;
+		first=first.next;
+		return temp	;
+	}
+	
+	public void displayLinkedList()
+	{
+		while(first!=null)
+		{
+			first.displayNode(); 
+			first=first.next;
+			
+		}
+	}
+	 
+	
+}

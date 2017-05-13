@@ -1,0 +1,129 @@
+package SinglyLinkedList;
+
+public class SinglyLinkedList
+{
+
+	private  Node first;
+	//private Node last;
+	 public boolean isEmpty(){
+	        return (first == null);
+	    }
+	  public SinglyLinkedList(){
+	         
+	    }
+	     
+	public void insertFirst(int data)
+	{
+		Node n1 = new Node();
+		n1.data=data;
+		n1.next=first;
+		first = n1;
+		//System.out.println(isEmpty());
+	}
+	
+	 public Node deleteFirst(){
+		 if(first.next==null)
+		 {
+			 System.out.println("next is null");
+		 }
+		 Node temp = first;
+	        first = first.next;
+	        return temp;
+	    }
+	
+	public void displayLinkedList()
+	{
+		Node currentNode = first;
+		while(currentNode!=null)
+		{
+			currentNode.displayNode(); 
+			currentNode=currentNode.next;
+			
+		}
+	}
+	public void insertAtTheEnd(int data)
+	{
+		Node lastNode =first;
+		while(lastNode.next!=null)
+		{
+			lastNode=lastNode.next;
+		}
+			Node new1 = new Node();
+			new1.data=data;
+		lastNode.next= new1;
+		//lastNode.data=data;
+	}
+	
+	public static  void commonElement(SinglyLinkedList list1, SinglyLinkedList list2) {
+
+		list1.displayLinkedList();
+		list2.displayLinkedList();
+		Node temp1 =  list1.first;
+
+		Node temp2 = list2.first;
+		
+		
+	
+		Node print = new Node();
+		Node head = print;
+		
+		
+		while (temp1 != null && temp2 != null) {
+
+			System.out.println(temp1.data+"=="+temp2.data);
+			if (temp1.data == temp2.data) {
+				System.out.println("If Equals");
+				Node n1 = new Node();
+				System.out.println("temp data adding:"+temp1.data);
+				n1.data=temp1.data;
+				head.next = n1; // Copy common element.
+
+				temp1 = temp1.next;
+
+				temp2 = temp2.next;
+
+				head = head.next;
+
+			} else if (temp1.data > temp2.data) {
+
+				System.out.println("Inside first if condition:"+temp1.data+" temp1.data:"+temp2.data+" temp2.data");
+				temp2 = temp2.next;	
+
+			} else { // list1.data < list2.data
+
+				temp1 = temp1.next;	
+
+			}
+
+		}
+
+		System.out.println("----------------------");
+		while(print!=null)
+		{
+			
+			print.displayNode(); 
+			print=print.next;
+			
+		}
+		
+	
+
+	}
+	
+	public void removeDuplicates(SinglyLinkedList list)
+	{
+		Node n1 = list.first;
+		if(n1==null || n1.next==null)
+		{
+			System.out.println("List have zero or one node");
+		}
+		Node curr = n1;
+		Node prev;
+		while(n1!=null)
+		{
+			
+		}
+	}
+	
+	
+}

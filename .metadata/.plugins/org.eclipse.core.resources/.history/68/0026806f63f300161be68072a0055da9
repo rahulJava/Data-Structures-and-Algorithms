@@ -1,0 +1,29 @@
+public class AnagramCheck
+{
+	public static void main(String[] args)
+	{
+		boolean is=isAnagram("Nitin", "Nitin1");
+		System.out.println("is:"+is);
+	}
+	
+	public static boolean isAnagram(String word, String anagram){
+		if(word.length()!=anagram.length()){
+			return false;
+		}
+		char[] chars=word.toCharArray();
+		for(Character c:chars)
+		{
+			int index = anagram.indexOf(c);
+			if(index!=-1)
+			{
+				anagram=anagram.substring(index+1,anagram.length());
+			}
+			else
+			{
+				return false;
+			}
+		}
+		return true;
+		}
+
+};

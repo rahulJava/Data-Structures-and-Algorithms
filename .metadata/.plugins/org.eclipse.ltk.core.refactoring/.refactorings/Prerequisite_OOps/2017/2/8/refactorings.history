@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Inheritance.Base&apos; to &apos;Derived&apos;&#x0D;&#x0A;- Original project: &apos;Prerequisite_OOps&apos;&#x0D;&#x0A;- Original element: &apos;Inheritance.Base&apos;&#x0D;&#x0A;- Renamed element: &apos;Inheritance.Derived&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Base&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Inheritance{Base.java[Base" matchStrategy="1" name="Derived" qualified="false" references="true" similarDeclarations="false" stamp="1488040993269" textual="false" version="1.0"/>
+</session>

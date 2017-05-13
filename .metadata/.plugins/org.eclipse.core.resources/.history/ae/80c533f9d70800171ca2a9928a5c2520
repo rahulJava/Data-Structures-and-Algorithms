@@ -1,0 +1,47 @@
+package Thread;
+
+public class C {
+	public static void main(String[] args) {
+		E e1 = new E();
+		D d1 = new D(e1,"Dhoni");
+		D d2 = new D(e1,"Yuvraj");
+		d1.start();
+		d2.start();
+		
+		
+	}
+
+}
+class D extends Thread
+{
+	E e1 ;
+	String name;
+	D(E e1 ,String name)
+	{
+		this.e1=e1;
+		this.name=name;
+	}
+	public synchronized void run()
+	{
+		
+		for(int i =0 ;i<10;i++)
+		{
+			System.out.print("GoodMorning:");
+			
+			try {
+				e1.print(name);
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+class E
+{
+	public  void print(String name)
+	{
+		System.out.println(name);
+	}
+}

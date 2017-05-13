@@ -1,0 +1,150 @@
+// Java program to implement solution of producer
+// consumer problem.
+import java.util.LinkedList;
+
+
+
+public class Threadexample
+{
+	public static void main(String[] args)
+						throws InterruptedException
+	{
+		// Object of a class that has both produce()
+		// and consume() methods
+		 ProducerConsumer pc = new ProducerConsumer();
+
+		// Create producer thread
+		producer b1 = new producer(pc);
+		consumer b2 = new consumer(pc);
+		
+		Thread t1 = new Thread(b1);
+		Thread t2 = new Thread(b2);
+
+		// Create consumer thread
+		
+
+		// Start both threads
+		t1.start();
+		t2.start();
+
+		// t1 finishes before t2
+		t1.join();
+		t2.join();
+		System.out.println("Hi End of main program");
+	}
+}
+
+	class producer implements Runnable
+	{
+		ProducerConsumer pc ;
+		public producer(ProducerConsumer pc) {
+			this.pc = pc;
+			
+		}
+
+		@Override
+		public void run()
+		{
+			try {
+				pc.produce();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	class consumer implements Runnable
+	{
+		ProducerConsumer pc ;
+		public consumer(ProducerConsumer pc) {
+			this.pc = pc;
+			
+		}
+
+		@Override
+		public void run()
+		{
+			try
+			{
+				pc.consume();
+			}
+			catch(InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}
+	// This class has a list, producer (adds items to list
+	// and consumber (removes items).
+  class ProducerConsumer
+	{
+		// Create a list shared by producer and consumer
+		// Size of list is 2.
+		LinkedList<Integer> list = new LinkedList<>();
+		int capacity = 2;
+
+		// Function called by producer thread
+		public void produce() throws InterruptedException
+		{
+			int value = 0;
+			System.out.println("Value:"+value);
+			while (true)
+			{
+				synchronized (this)
+				{
+					
+					// producer thread waits while list
+					// is full
+					System.out.println("list size:"+list.size());
+					while (list.size()==capacity)
+					{
+						System.out.println("Inside wait");
+						wait();
+					}
+					System.out.println("Producer produced-"
+												+ value);
+					
+					// to insert the jobs in the list
+					list.add(value++);
+
+					// notifies the consumer thread that
+					// now it can start consuming
+					notify();
+
+					// makes the working of program easier
+					// to understand
+					Thread.sleep(1000);
+				}
+				//System.out.println("outside of while:"+value);
+			}
+		}
+
+		// Function called by consumer thread
+		public void consume() throws InterruptedException
+		{
+			while (true)
+			{
+				synchronized (this)
+				{
+					// consumer thread waits while list
+					// is empty
+					while (list.size()==0)
+						wait();
+
+					//to retrive the ifrst job in the list
+					int val = list.removeFirst();
+
+					System.out.println("Consumer consumed-"
+													+ val);
+
+					// Wake up producer thread
+					notify();
+
+					// and sleep
+					Thread.sleep(1000);
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,17 @@
+package SinglyLinkedList;
+
+public class SinglyLinkedList
+{
+
+	Node first;
+	public void insertFirst(int data)
+	{
+		Node n1 = new Node();
+		n1.data=data;
+		n1=first;
+		first = n1;
+		
+	}
+	 
+	
+}

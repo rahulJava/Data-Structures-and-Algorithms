@@ -1,0 +1,26 @@
+package com.rahul;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebService;
+
+//Service Implementation
+@WebService(endpointInterface = "com.rahul.IHelloWorld")
+public class HelloWorldImpl implements IHelloWorld{
+
+	@Override
+	public String getHelloWorldAsString(String name) {
+		return "Hello World JAX-WS " + name;
+	}
+	@Override
+	public List<String> getProductCategories()
+	{
+		List<String> categories = new ArrayList<>();
+		categories.add("book");
+		categories.add("music");
+		categories.add("movies");
+		return categories;
+		
+	}
+	
+}

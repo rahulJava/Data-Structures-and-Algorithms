@@ -1,0 +1,60 @@
+package Thread;
+
+public class A {
+	public static void main(String[] args) {
+		 	prints print = new prints();
+	        B t1 = new B(print, 10, false);
+	        B t2 = new B(print, 10, true);
+	        t1.start();
+	        t2.start();
+		
+	}
+
+}
+
+class B extends Thread
+{
+	prints print;
+	int max;
+	boolean isEvenNumber;
+	B(prints print, int max, boolean isEvenNumber) {
+        this.print = print;
+        this.max = max;
+        this.isEvenNumber = isEvenNumber;
+    }
+
+	public void run()
+	{
+		for(int i = 0;i<100;i++)
+		{
+			if(i%2==0)
+			{
+				print.printEven(i);
+			}
+			else
+			{
+				print.printOdd(i);
+			}
+				
+		}
+	}
+}
+class prints
+{
+	public   synchronized void printEven (int i)
+	{
+		System.out.println("even:"+Thread.currentThread().getName()+" "+i);
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public   synchronized void printOdd (int i) throws InterruptedException
+	{
+		System.out.println("odd:"+Thread.currentThread().getName()+" "+i);
+		wait();
+	}
+	
+}

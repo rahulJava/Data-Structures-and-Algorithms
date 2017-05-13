@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;messenger/src/main/java/org.rahul.messenger.model&apos;&#x0D;&#x0A;- Original project: &apos;JAXB&apos;&#x0D;&#x0A;- Destination element: &apos;messenger/src/main/java/org.rahul.messenger.model&apos;&#x0D;&#x0A;- Original element: &apos;Employee.java&apos;" description="Copy compilation unit" destination="=messenger/src\/main\/java&lt;org.rahul.messenger.model" element1="/src&lt;{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1483201021537" units="1" version="1.0"/>
+</session>

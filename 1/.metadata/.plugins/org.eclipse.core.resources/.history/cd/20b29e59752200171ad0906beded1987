@@ -1,0 +1,104 @@
+package SinglyLinkedList;
+
+public class SinglyLinkedList
+{
+
+	private  Node first;
+	//private Node last;
+	 public boolean isEmpty(){
+	        return (first == null);
+	    }
+	  public SinglyLinkedList(){
+	         
+	    }
+	     
+	public void insertFirst(int data)
+	{
+		Node n1 = new Node();
+		n1.data=data;
+		n1.next=first;
+		first = n1;
+		//System.out.println(isEmpty());
+	}
+	
+	 public Node deleteFirst(){
+		 if(first.next==null)
+		 {
+			 System.out.println("next is null");
+		 }
+		 Node temp = first;
+	        first = first.next;
+	        return temp;
+	    }
+	
+	public void displayLinkedList()
+	{
+		Node currentNode = first;
+		while(currentNode!=null)
+		{
+			currentNode.displayNode(); 
+			currentNode=currentNode.next;
+			
+		}
+	}
+	public void insertAtTheEnd(int data)
+	{
+		Node lastNode =first;
+		while(lastNode.next!=null)
+		{
+			lastNode=lastNode.next;
+		}
+			Node new1 = new Node();
+			new1.data=data;
+		lastNode.next= new1;
+		//lastNode.data=data;
+	}
+	
+	public static  void commonElement(SinglyLinkedList list1, SinglyLinkedList list2) {
+
+		Node temp1 =  list1.first;
+
+		Node temp2 = list2.first;
+		
+		Node currentNode = temp1;
+	
+		Node print = new Node();
+		Node head = print;
+
+		while (temp1 != null && temp2 != null) {
+
+			if (temp1.data == temp2.data) {
+				Node n1 = new Node();
+				n1.data=temp1.data;
+				head.next = n1; // Copy common element.
+
+				temp1 = temp1.next;
+
+				temp2 = temp2.next;
+
+				head = head.next;
+
+			} else if (temp1.data > temp2.data) {
+
+				System.out.println("Inside first if condition");
+				temp2 = temp2.next;	
+
+			} else { // list1.data < list2.data
+
+				temp1 = temp1.next;	
+
+			}
+
+		}
+
+		while(print!=null)
+		{
+			print.displayNode(); 
+			print=print.next;
+			
+		}
+
+	}
+	
+	
+}
